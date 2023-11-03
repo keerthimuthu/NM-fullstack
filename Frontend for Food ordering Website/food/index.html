@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="du">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ----------main style------------ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- ------------Google Fonts-------------- -->
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- --------------Icon pack font-awesome----------- -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- --------------------Google Maps Api---------------- -->
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap">
+        </script>
+        <title>FOODZEE | World's Best Foods</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/foodzee.png" style="height:60px;" alt="logo-image">
+                    </div>
+                    <nav>
+                        <ul id="menu-items">
+                            <li><a href="">Home</a></li>
+                            <li><a href="index2.html">Products</a></li>
+                        
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="register.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img">
+                    <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <h1 class="text-white">Welcome to Hunger Side! <br> Right Now!</h1>
+                        <p>Enjoy a safe, convenient ordering experience</p>
+                        <p>Order stress-free from home. We’re ready to help, online or by phone.</p>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/fp-home.png" alt="banner-image" class="center">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- featured products -->
+        <div class="small-container mt-5">
+            <h2 class="title"> STARTERS</h2>
+            <div class="row horizontal-scroll-wrapper squares">
+                <div class="col-4 box-container">
+                    <div class="image-overlay"></div>
+                    <img src="images/fries.png" alt="PIZZA">
+                    <h5 class="product_name">French Fries</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">French Fries</h3>
+                        <h4 class="content-price">Rs 50</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <p class="price_name" >Rs 50</p>
+                    <!-- <div class="btn btn-secondary" title="Preview Item"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/cheese ballls.png" alt="Gaming console">
+                    <h5 class="product_name">Cheese Balls</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 60</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/paneer tikka.png" alt="Iphone X">
+                    <h5 class="product_name">Paneer Tikka</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="price_name" >Rs 80</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/tandoori.png" alt="keyboard">
+                    <h5 class="product_name">Tandoori</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 100</p>
+                </div>
+            </div>
+            <!-- Latest products -->
+            <h2 class="title">MAIN COURSE</h2>
+            <div class="row">
+                <div class="col-4 box-container">
+                    <img src="images/biriyani.png" alt="Gaming Laptop">
+                    <h5 class="product_name">Biriyani</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 280</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/noodles.png" alt="Camera">
+                    <h5 class="product_name">Noodles</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 150</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/parotta.png" alt="Iphone SE">
+                    <h5 class="product_name">Parotta</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 100</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/chicken rice.png" alt="Tablet Pc">
+                    <h5 class="product_name">Chicken Fried Rice</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 180</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/chilli chicken.png" alt="Imac">
+                    <h5 class="product_name">Chilli Chicken</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 100</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/pizza.png" alt="Gaming Laptop">
+                    <h5 class="product_name">Pizza</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 200</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/pasta.png" alt="Gaming Laptop">
+                    <h5 class="product_name">Pasta</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 150</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/burger.png" alt="Playstation 4">
+                    <h5 class="product_name">Burger</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 180</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/naan.png" alt="Phantom Drone">
+                    <h5 class="product_name">Butter Naan</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 100</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/pulao.png" alt="Epson Projector">
+                    <h5 class="product_name">Pulao</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 140</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/chicken gravy.png" alt="Gaming Headset">
+                    <h5 class="product_name">Chicken gravy</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 150</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/grill.png" alt="Super Bass Laptop Speakers">
+                    <h5 class="product_name">Grill Chicken</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs 250</p>
+                </div>
+               
+
+        <!-- offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/c.png" class="offer-img">
+                    </div>
+                    <div class="col-6 text-data text-white">
+                        <p>From Best Hotels you should take it</p>
+                        <h1>Best Foods !</h1>
+                        
+                        <a href="" class="btn">Order Now </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/swiggy.png" alt="Partners">
+                    </div>
+                    
+                    <div class="col-3">
+                        <img src="images/zomato.png" alt="Partners">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/fagito.png" alt="Partners">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">Copyrights@2023</div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
